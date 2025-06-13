@@ -16,6 +16,7 @@ body{
     background:url(https://img3.wallspic.com/crops/3/8/8/0/7/170883/170883-desert_planets-atmosphere-planet-nature-macaron-3840x2160.jpg)no-repeat center center/cover; /* Add your background image URL here */
 }
 
+
 .container{
     display: flex;
     justify-content: center;
@@ -50,6 +51,59 @@ body{
     align-items: center;
 }
     
+.stat-container{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.details{
+    width: 100%;
+
+}
+
+.details h3 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#progressbar{
+    width: 100%;
+    height: 7px;
+    background: rgba(255,194,209,0.3);
+    border-radius: 20px;
+    position: relative;
+    margin-top: 15px;
+}
+#progress{
+    width: 0%;
+    height: 100%;
+    background: #ff6f91;
+    border-radius: 20px;
+    transition: width 0.3 ease;
+
+}
+
+#numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background:#ff6f91;
+    border: 2px solid rgba(255,194,209,0.3);
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
 .input-area{
     display: flex;
     justify-content: center;
@@ -160,6 +214,11 @@ body{
     
 }
 
+#task-list li.completed span{
+    text-decoration: 2px line-through #000 ;
+    color: #000;
+}
+
 .task-buttons{
     display: flex;
     gap: 10px;
@@ -193,4 +252,29 @@ body{
 
 .task-buttons .delete-btm{
     background:#ff6f91;
+}
+
+@media (max-width:600px){
+    .container{
+        margin: 0 20px;
+        padding: 0 10px;
+    }
+
+    .todo-list{
+        padding:1.5rem;
+        gap: 20px;
+    }
+
+    #numbers{
+        width: 60px;
+        height: 60px;
+        font-size: 1rem;
+    }
+    .input-area input{
+        font-size: 1rem;
+    }
+
+    #task-list li {
+        font-size:1rem ;
+    }
 }
