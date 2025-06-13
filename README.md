@@ -14,3 +14,4 @@ It’s beginner-friendly and a great small project to understand how dynamic ele
 
 This is project that I completed while developing my basic skills and combining them together to make a complete project
 I made this while doing my summer internship from INFO ERA SOFTWARE SERVICES PRIVATE LTD.
+![Screenshot 2025-06-13 232906](https://github.com/user-attachments/assets/bae4a227-8689-427b-9b28-956e799d5a84)
